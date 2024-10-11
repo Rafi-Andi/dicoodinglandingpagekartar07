@@ -1,0 +1,407 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: quicksand, sans-serif;
+    background-color: azure;
+}
+:root {
+    --utama: #4F75FF;
+    --second: #6439FF;
+    --font: #00CCDD;
+    --font2: #BCF2F6;
+    --font3: #024CAA;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--font);
+    padding: 15px;
+    max-width: 100%px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 10px;
+    border-bottom: 3px solid var(--font3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--font2);
+    font-weight: 800;
+    font-size: 15px;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition-duration: 1s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid ;
+}
+
+.logo a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 1000;
+    color: var(--utama);
+    font-size: 15px;
+}
+
+.logo a span {
+    color: var(--second);
+}
+
+.content {
+    background-color: azure;
+}
+.content .home {
+    display: flex;
+    background-color: 402E7A;
+    max-width: 100%px;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+}
+
+.content .isi {
+    background-color: 547e8b;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.content .isi h3 {
+    color: var(--font3);
+    font-size: 30px;
+}
+.content .isi h1 {
+    color: var(--font3);
+    font-size: 50px;
+}
+.content .isi p {
+    font-size: 15px;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+.content .isi .kontak p a {
+    background-color: var(--font);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition-duration: 1s;
+    color: black;
+}
+.content .isi .kontak p a:hover {
+    color: var(--font2);
+}
+
+.home aside img {
+    max-width: 220px;
+}
+
+article {
+    background-color: qua;
+    padding: 20px;
+}
+
+article h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+article p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+article h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.article-1 {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--font2);
+    height: 100vh;
+}
+
+.article-1 p {
+    background-color: 4E31AA;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.article-2 {
+    background-color: 4E31AA;
+    height: 100vh;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.isi-kegiatan {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.article-2 h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: #00CCDD;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: black;
+    border-top: 3px solid var(--font3);
+    border-radius: 10% 10% 0 0;
+    -webkit-border-radius: 10% 10% 0 0;
+    -moz-border-radius: 10% 10% 0 0;
+    -ms-border-radius: 10% 10% 0 0;
+    -o-border-radius: 10% 10% 0 0;
+}
+
+footer .list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .list ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition-duration: 0.5s;
+}
+
+footer .list ul li a:hover {
+    color: var(--font2);
+}
+
+footer .sosial-media img{
+    width: 24px;
+    transition: all;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+    transition-duration: 1s;
+}
+
+footer .sosial-media img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+/*Dekstop*/
+@media (max-width:1366px){
+    
+}
+
+/*Tablet*/
+@media (max-width:748px){
+    nav ul li a {
+        font-size: 80%;
+    }
+    .logo a {
+        font-size: 80%;
+    }
+    .content .home {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        gap: 50px;
+    }
+    .home .isi {
+        flex-grow: 1;
+        order: 2;
+    }
+    .home aside img{
+        flex-grow: 1;
+        order: 1;
+    }
+    .home .isi h3 {
+        font-size: 20px;
+    }
+    .home .isi h1 {
+        font-size: 30px;
+    }
+    .home .isi p {
+        font-size: 12px;
+        max-width: 280px;
+    }
+    .article-1 {
+        height: 100vh;
+    }
+    .article-1 p {
+        font-size: 12px;
+    }
+    .article-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 150vh;
+    }
+
+    .article-2 p {
+        font-size: 11px;
+        max-height: 90vh;
+    }
+    .isi-kegiatan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        overflow: hidden;
+    }
+    footer {
+        font-size: 12px;
+    }
+}
+
+/*Phone*/
+@media (max-width:450px){
+    nav ul li a {
+        font-size: 60%;
+    }
+    nav ul {
+        gap: 6px;
+    }
+    .logo a {
+        font-size: 60%;
+    }
+    .home aside img{
+        flex-grow: 1;
+        order: 1;
+        max-width: 200px;
+    }
+    .home .isi h3 {
+        font-size: 15px;
+    }
+    .home .isi h1 {
+        font-size: 30px;
+    }
+    .home .isi p {
+        font-size: 12px;
+        max-width: 250px;
+    }
+    .article-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 160vh;
+    }
+
+    .article-2 p {
+        font-size: 11px;
+        max-height: 90vh;
+    }
+    .isi-kegiatan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        overflow: hidden;
+        padding: 2px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 5;
+        gap: 10px;
+    }
+}
+
+@media (max-width:360px){
+    nav ul li a {
+        font-size: 50%;
+    }
+    nav ul {
+        gap: 5px;
+    }
+    .logo a {
+        font-size: 40%;
+    }
+    .article-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 150vh;
+        padding: 15px;
+    }
+    .article-1 p {
+        font-size: 12px;
+    }
+    .article-2 p {
+        font-size: 10px;
+        max-height: 90vh;
+    }
+    .isi-kegiatan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.3rem;
+        overflow: hidden;
+        padding: 5px;
+    }
+    footer {
+        font-size: 10px;
+        padding: 7px;
+    }
+}
+
+
+
+
+
+
+
+
+
